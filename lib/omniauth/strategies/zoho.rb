@@ -7,12 +7,12 @@ module OmniAuth
 
       option :client_options, {
         :site => 'https://accounts.zoho.com',
-        :authorize_url => 'https://accounts.zoho.com/oauth/v2/auth',
+        :authorize_url => 'https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCRM.modules.ALL',
         :token_url => 'https://accounts.zoho.com/oauth/v2/token'
       }
 
       option provider_ignores_state: true
-      option :authorize_options, [:access_type, :prompt, :scope]
+      option :authorize_options, [:access_type, :prompt]
 
       def authorize_params
         super.tap do |params|
