@@ -7,7 +7,7 @@ module OmniAuth
 
       option :client_options, {
         :site => 'https://accounts.zoho.com',
-        :authorize_url => 'https://accounts.zoho.com/oauth/v2/auth?scope=Aaaserver.profile.read,ZohoCRM.modules.ALL,ZohoCRM.settings.all',
+        :authorize_url => 'https://accounts.zoho.com/oauth/v2/auth?scope=Aaaserver.profile.read,ZohoCRM.modules.ALL,ZohoCRM.settings.all,ZohoCRM.users.READ',
         :token_url => 'https://accounts.zoho.com/oauth/v2/token?'
       }
 
